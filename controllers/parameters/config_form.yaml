@@ -1,0 +1,12 @@
+name: Settings & Parameters
+form: $/martin/settings/models/parameter/fields.yaml
+
+modelClass: Martin\Settings\Models\Parameter
+
+defaultRedirect: martin/settings/parameters
+
+update:
+    title        : Update
+    redirect     : martin/settings/parameters
+    redirectClose: martin/settings/parameters
+    flashSave    : Parameter updated

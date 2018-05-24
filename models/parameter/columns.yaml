@@ -1,0 +1,11 @@
+columns:
+
+    parameter:
+        label: Parameter
+        width: "1%"
+
+    value:
+        label: Value
+
+    description:
+        label: Description

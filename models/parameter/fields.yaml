@@ -1,0 +1,18 @@
+fields:
+
+    parameter:
+        label   : Parameter
+        type    : text
+        span    : left
+        disabled: disabled
+
+    description:
+        label   : Description
+        type    : text
+        span    : left
+        disabled: disabled
+
+    value:
+        label   : Value
+        type    : text
+        span    : left
