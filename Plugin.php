@@ -5,6 +5,7 @@ namespace Martin\Settings;
 use Backend;
 use System\Classes\PluginBase;
 use System\Classes\SettingsManager;
+use Martin\Settings\Classes\Parameters as ParametersTwig;
 
 class Plugin extends PluginBase {
 
@@ -42,5 +43,16 @@ class Plugin extends PluginBase {
     public function register() {
         $this->registerConsoleCommand('settings:add', 'Martin\Settings\Console\AddParameterCommand');
     }
+
+    public function registerMarkupTags() {
+        return [
+            'functions' => [
+                'get_parameter'    => [ParametersTwig::class, 'get'],
+                'get_parameters'   => [ParametersTwig::class, 'all'],
+                'clear_parameters' => [ParametersTwig::class, 'clear'],
+            ]
+        ];
+    }
+
 
 }

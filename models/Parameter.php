@@ -18,7 +18,7 @@ class Parameter extends Model {
     }
 
     public function afterSave() {
-        Cache::forget('parameters');
+        Cache::forget('martin_settings_parameters');
     }
 
 }
